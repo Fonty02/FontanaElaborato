@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fonta.piattaforma.Campagna"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/fasi"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fasiTextView"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/fasiTextView"
+            android:src="@drawable/fase1"
+            android:id="@+id/fase1Image"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/fase1Image"
+            android:src="@drawable/fase2"
+            android:id="@+id/fase2Image"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@id/fase2Image"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/fase3"
+            android:id="@+id/fase3Image"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@id/fase3Image"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/fase4"
+            android:id="@+id/fase4Image"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linkTextView"
+            android:layout_below="@id/fase4Image"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hyperlinkReportVaccini"
+            />
+    </RelativeLayout>
+
+</ScrollView>

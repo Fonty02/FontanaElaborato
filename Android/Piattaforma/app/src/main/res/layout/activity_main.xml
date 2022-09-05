@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fonta.piattaforma.MainActivity">
+
+    <ImageView
+        android:id="@+id/fotoBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner" />
+
+    <TextView
+        android:id="@+id/LoginTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/fotoBanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/UsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginTextView"
+        android:layout_marginTop="20dp"
+        android:hint="@string/username"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:inputType="text"
+
+        />
+
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UsernameEditText"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="50dp"
+        android:text="@string/loginButton"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorBottone"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:onClick="Login"
+
+        />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/reset"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorBottone"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:onClick="Clear"
+        />
+
+</RelativeLayout>

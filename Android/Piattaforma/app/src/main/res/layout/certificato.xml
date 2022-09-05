@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fonta.piattaforma.Certificato"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CertView"
+        android:text="@string/Cert"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CertInfoView"
+        android:layout_below="@id/CertView"
+        android:text="@string/infoCert"
+        android:textSize="15sp"
+        android:layout_margin="4dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/certificato"
+        android:layout_below="@id/CertInfoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/certificatoImage"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/certificatoImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorAccent"
+        android:text="@string/backToHome"
+        android:textColor="@color/colorBottone"
+        android:textStyle="bold"
+        android:onClick="backHomePage"
+        />
+
+</RelativeLayout>

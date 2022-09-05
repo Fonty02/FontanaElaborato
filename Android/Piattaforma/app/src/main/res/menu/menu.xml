@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.fonta.piattaforma"
+
+    >
+    <item
+
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_icon"
+        app:showAsAction="ifRoom"
+        android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/itemHome"
+                android:title="@string/homeItem" />
+            <item
+                android:id="@+id/itemVaccini"
+                android:title="@string/vacciniItem"
+                />
+            <item
+                android:id="@+id/itemCampagna"
+                android:title="@string/campagnaItem"
+                />
+            <item
+                android:id="@+id/itemFakeNews"
+                android:title="@string/fakeNewsItem"
+                />
+            <item
+                android:id="@+id/certificatoItem"
+                android:title="@string/certificatoItem" />
+
+            <item
+                android:id="@+id/questionarioItem"
+                android:title="@string/questionarioItem" />
+
+            <item
+                android:id="@+id/logoutItem"
+                android:title="@string/logoutItem" />
+
+
+
+        </menu>
+
+    </item>
+</menu>

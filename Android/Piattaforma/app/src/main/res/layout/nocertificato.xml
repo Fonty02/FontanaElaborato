@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fonta.piattaforma.nonCertificato"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nonCertView"
+        android:text="@string/noCert"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorFailed"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nonCertInfoView"
+        android:layout_below="@id/nonCertView"
+        android:text="@string/infoNoCert"
+        android:textSize="15sp"
+        android:layout_margin="4dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/sorry"
+        android:layout_below="@id/nonCertInfoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/ciDisp"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ciDisp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorFailed"
+        android:text="@string/backToHome"
+        android:textColor="@color/colorBottone"
+        android:textStyle="bold"
+        android:onClick="backHomePage"
+        />
+
+</RelativeLayout>

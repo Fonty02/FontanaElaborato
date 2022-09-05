@@ -1,0 +1,10 @@
+SWITCH
+username adminO1 privilege 15 password Hosp1
+line console 0
+login local
+
+vty ora disattivata (come anche VLAN1)
+banner motd (LAN Ospedale2. Qualsiasi accesso indesiderato sara' punito!(
+
+Router
+username adminO1 privilege 15 password Hosp1

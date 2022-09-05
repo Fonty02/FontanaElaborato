@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fonta.piattaforma.FakeNews"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/fakeNewsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/fakeNews"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relFake1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fakeNewsText"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/falsoImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/falso"
+                android:layout_marginRight="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/falsoText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/falsoImage1"
+                android:text="@string/falso1" />
+
+            <ImageView
+                android:id="@+id/veroImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/falsoImage1"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/vero"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/veroText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/falsoText1"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/veroImage1"
+                android:text="@string/vero1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relFake2"
+            android:layout_below="@id/relFake1"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/falsoImage2"
+                android:src="@drawable/falso"
+                android:layout_marginRight="10dp"
+
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/falsoImage2"
+                android:text="@string/falso2"
+                android:id="@+id/falsoText2"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/veroImage2"
+                android:src="@drawable/vero"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignTop="@+id/veroText2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/veroImage2"
+                android:layout_below="@id/falsoText2"
+                android:text="@string/vero2"
+                android:id="@+id/veroText2"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relFake3"
+            android:layout_below="@id/relFake2"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/falsoImage3"
+                android:src="@drawable/falso"
+                android:layout_marginRight="10dp"
+
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/falsoImage3"
+                android:text="@string/falso3"
+                android:id="@+id/falsoText3"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/veroImage3"
+                android:src="@drawable/vero"
+                android:layout_below="@id/falsoImage3"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/veroImage3"
+                android:layout_below="@id/falsoText3"
+                android:text="@string/vero3"
+                android:id="@+id/veroText3"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relFake4"
+            android:layout_below="@id/relFake3"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/falsoImage4"
+                android:src="@drawable/falso"
+                android:layout_marginRight="10dp"
+
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/falsoImage4"
+                android:text="@string/falso4"
+                android:id="@+id/falsoText4"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/veroImage4"
+                android:src="@drawable/vero"
+                android:layout_below="@id/falsoImage4"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/veroImage4"
+                android:layout_below="@id/falsoText4"
+                android:text="@string/vero4"
+                android:id="@+id/veroText4"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

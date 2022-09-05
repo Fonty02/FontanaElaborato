@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.fonta.piattaforma.Homepage">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextClock
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/colorAccent"
+    android:textSize="20sp"
+    android:textStyle="bold|italic"
+    android:id="@+id/clock"
+    />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/clock"
+        android:src="@drawable/primula"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/primulaImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homepage"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/homeTextView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/primulaImage"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/linea1"
+        android:layout_below="@id/homeTextView"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linea1"
+        android:text="@string/fasi"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fasiTextView"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fasiTextView"
+        android:src="@drawable/fase1"
+        />
+
+</RelativeLayout>
+    </ScrollView>
